@@ -229,7 +229,7 @@ def rest_server_create_api(operation,key="",args=[]):
 
 	if len(args) == 4 :
 		try :
-			payload = {'DCID': int(args[0]),'VPSPLANID': int(args[1]),'OSID': int(args[2]),'SCRIPTID':int(args[3])}
+			payload = {'DCID': int(args[0]),'VPSPLANID': int(args[1]),'OSID': int(args[2]),'SCRIPTID':int(args[3]), 'enable_ipv6':'yes'}
 		except Exception:
 			print "StartScript can not be used with snapshot , only with standard vultr os image!"
 			print 
